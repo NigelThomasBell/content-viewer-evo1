@@ -1,0 +1,80 @@
+/* General */
+    *{
+        font-family: arial;
+    }
+    #root, html, body, #container {
+        height: 100%;
+        margin: 0;
+    }
+    #container {
+        overflow: hidden;
+        display: flex;
+    }
+/* File Explorer */
+    #file-explorer {
+        height: 100%;
+        overflow: auto;
+        width: 350px;
+        padding: 10px;
+    }
+    /* Top part (current directory, search and sorting) */
+        #current-folder-directory {
+            word-wrap: break-word;
+        }
+        #button-section{
+            border: black;
+            display: flex;
+            flex-direction: row; 
+        }
+        .sort-option{
+            padding-top: 10px;
+        }
+        .sort-selector{
+            margin-left: 5px;
+        }
+    /* Bottom part (contents) */
+        .clickable {
+            cursor: pointer;
+        }
+        .icon-row {
+            width: 2em;
+        }
+        .icon-folder {
+            width: 1em;
+        }
+        .icon-file {
+            width: 0.75em;
+        }
+        .selected {
+            background-color: lightsalmon;
+        }
+
+/* Resizable Section Divider */
+    #section-divider {
+        background-color: black;
+        width: 10px;
+        height: 100%;
+        cursor: ew-resize;
+    }
+
+/* Page Section */
+    #page-section {
+        flex: 1 1 auto;
+    }
+    #page-iframe { 
+        width: 100%;
+        height: 100%;
+        border: none; 
+    }
+
+/* IFrame Messages */
+    #iframe-message{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        height: 100%;
+        font-size: 30px;
+        font-weight: bold;
+        padding: 0 20px;
+    } 
